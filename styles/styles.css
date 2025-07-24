@@ -165,6 +165,187 @@ header {
 
 
 
+/* plants section  */
+
+
+
+.plants {
+    margin-top: 120px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.plants-content {
+    width: 100%;
+    height: 1186px;
+    text-align: center;
+}
+
+.plants-title {
+    font-family: "Noto Serif", serif;
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+
+.plants-description {
+    font-family: "Inter", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0 auto 60px auto;
+    max-width: 600px;
+    line-height: 1.4;
+}
+
+.plants-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    justify-items: center;
+}
+
+.plant-card {
+    width: 270px;
+    text-align: center;
+}
+
+.plant-image {
+    width: 270px;
+    height: 323px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.card-title {
+    font-family: "Inter", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: #111111;
+    margin: 0 0 10px 0;
+}
+
+.card-price {
+    font-family: "Inter", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #111111;
+    margin: 0 0 15px 0;
+}
+
+.add-to-cart-btn {
+    width: 270px;
+    height: 50px;
+    background-color: #E95A08;
+    color: #FFFFFF;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+
+}
+
+
+/* Love section styles */
+.love{
+    width: 1440px;
+    height: 597px;
+    margin-top: 221px;
+    margin-left: auto;
+    margin-right: 0;
+    padding-left: 150px;
+    padding-right: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.love-content{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    padding: 38px 0 38px 120px;
+
+    
+    
+    
+    
+}    
+.love-title{
+    font-family: "Noto Serif", serif;
+    font-size: 50px;
+    
+}       
+.love-description{
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-left: 10px;
+    width:540px;
+    height: 650px;
+    padding-top: 10px;
+}
+
+.love > div {
+    position: relative;
+    display: inline-block;
+}
+
+.love > div .trusted-badge {
+    position: absolute;
+    top: -140px;
+    
+    left: 63% ;
+    width: 340px; /* Adjust as needed */
+    height: 340px;
+   
+}
+
+
+.padding{
+    padding-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Mobile responsive styles nav bar */
 @media (max-width: 576px) {
@@ -266,4 +447,134 @@ header {
     }
 
 }
+
+
+
     
+
+
+/* Mobile responsive styles for plants section */
+@media (max-width: 576px) {
+    .plants {
+        margin-top: 60px;
+        padding-left: 20px;
+        padding-right: 20px;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .plants-content {
+        height: auto;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .plants-title {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+
+    .plants-description {
+        font-size: 16px;
+        margin-bottom: 40px;
+        max-width: 100%;
+    }
+
+    .plants-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 15px;
+        width: 100%;
+    }
+
+    .plant-card {
+        width: 100%;
+        max-width: none;
+    }
+
+    .plant-image {
+        width: 100%;
+        max-width: 100%;
+        height: 200px;
+        margin-bottom: 10px;
+    }
+
+    .card-title {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .card-price {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+
+    .add-to-cart-btn {
+        width: 100%;
+        height: 40px;
+        font-size: 14px;
+    }
+}
+
+/* love section mobile response */
+@media (max-width: 576px) {
+    .love {
+        flex-direction: column;
+        width: 100%; /* Changed from 100vw to 100% */
+        height: auto;
+        margin-top: 40px;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        align-items: flex-start;
+        overflow-x: hidden; /* Prevent horizontal scroll */
+    }
+    .love > div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .love > div img:first-child {
+        width: 90vw;
+        max-width: 350px;
+        height: auto;
+    }
+    .love > div .trusted-badge {
+        display: none; /* Hide trusted badge on mobile */
+    }
+    .love-content {
+        width: 100%;
+        padding: 20px 0 0 0;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .love-title {
+        font-size: 28px;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .love-description {
+        font-size: 16px;
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        padding-top: 10px;
+        margin-bottom: 0;
+        /* Appears directly under love-title due to flex-direction: column */
+    }
+}
+
+@media (max-width: 576px) {
+    html, body {
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+}
+
+
